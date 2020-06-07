@@ -8,21 +8,11 @@ import { Routes, RouterModule } from '@angular/router';
 
 const routes: Routes = [
   {
-    path: '',
-    redirectTo: 'head',
-    pathMatch: 'full'
-  },
-  {
     path: 'head',
     component: HeaderComponent,
   },
   {
     path: 'head/:id',
-    component: OrderComponent,
-
-  },
-  {
-    path: 'order',
     component: OrderComponent,
   },
   { path: '**',
