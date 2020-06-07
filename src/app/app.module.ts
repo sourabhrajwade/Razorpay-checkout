@@ -7,16 +7,18 @@ import { AppComponent } from './app.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { HeaderComponent } from './header/header.component';
 import { NavbarComponent } from './navbar/navbar.component';
-import { ProdComponent } from './prod/prod.component';
+
 import { OrderComponent } from './order/order.component';
+import { SuccessComponent } from './success/success.component';
+import { DomSanitizer } from '@angular/platform-browser';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     NavbarComponent,
-    ProdComponent,
-    OrderComponent
+    OrderComponent,
+    SuccessComponent,
   ],
   imports: [
     BrowserModule,

@@ -1,32 +1,26 @@
-<div class="container-fluid">
+<div class="container">
+  <br />
+  <hr />
   <div class="row">
-    <div class="col-xs-12 flex-center">
-      <button class="btn btn-success" (click)="getData()">Show Products</button>
-    </div>
-
-  </div>
-  <br/>
-    <hr/>
-    <div class="row">
-      <!-- <div class="col-xs-12"> -->
-        <div
-          class="card-container"
-          *ngFor="let prod of productData; let i = index"
-        >
-          <div class="card" style="width: 18rem;">
-            <div class="card-body">
-              <h5 class="card-title">{{ prod.product_name }}</h5>
-              <span>{{ prod.department }}</span>
-              <span>{{ prod.name }}</span>
-              <p class="card-text">
-                Product Material - {{ prod.product_material }}
-                color = {{ prod.product_color }}
-              </p>
-              <a href="#" class="card-link">{{ prod.product_price }}</a>
-              | <a href="#" class="btn btn-primary">Buy</a>
-            </div>
-          </div>
+    <div class="card-container" *ngFor="let prod of productData; let i = index">
+      <div class="card" style="width: 18rem;">
+        <div class="card-body">
+          <h5 class="card-title">{{ prod.product_name }}</h5>
+          <span>{{ prod.department }}</span>
+          <span>{{ prod.name }}</span>
+          <p class="card-text">
+            Product Material - {{ prod.product_material }} color =
+            {{ prod.product_color }}
+          </p>
+          <a class="card-link">{{  prod.product_price }}</a>
+          |
+          <input
+            type="submit"
+            (click)="createRazoPay(prod.product_price, prod.id)"
+            value="Pay with Razorpay"
+          />
         </div>
       </div>
-    <!-- </div> -->
+    </div>
+  </div>
 </div>

@@ -1,49 +1,49 @@
-<div class="container clear">
-  <div class="tab">
-    <div class="leftcontent">
-      <div class="product"></div>
+<div class="container-fluid clear">
+  <div class="row">
+    <div class="col-xs-3">
       <div class="thumbnails">
         <div class="thumbnail"></div>
         <div class="thumbnail"></div>
         <div class="thumbnail"></div>
       </div>
     </div>
-    <div class="clear"></div>
-  </div>
-  <div class="tab">
-    <div class="rightcontent">
-      <h3 style="font-size: 24px;">Fine Tshirt</h3>
-      <div class="rating">
-        <img src="/images/demo/star.svg" alt="Star" /><img
-          src="/images/demo/star.svg"
-          alt="Star"
-        /><img src="/images/demo/star.svg" alt="Star" /><img
-          src="/images/demo/star.svg"
-          alt="Star"
-        /><img src="/images/demo/star.svg" alt="Star" />
+    <div class="col-xs-4">
+      <div class="tab">
+        <div class="leftcontent">
+          <div class="product" id="demo"></div>
+        </div>
+
       </div>
-      <p class="review"></p>
-      <div class="price">₹1.00</div>
-      <p class="description">
-        Razorpay provides an end-to-end online payments solution. We accept and
-        validate Internet payments via Credit Card, Debit Card, Net-Banking, UPI
-        and popular Wallets from the end customers in real-time.
-      </p>
-      <div class="pay">
-        <button
-          class="razorpay-payment-button btn filled small"
-          id="paybtn"
-          type="button"
-        >
-          Pay with Razorpay
-        </button>
-        <div id="footnote">
-          <em
-            >*This is a real transaction, and the money will be auto-refunded to
-            your account in 4-5 days.</em
-          >
+    </div>
+    <div class="col-xs-5">
+      <div class="tab">
+        <div class="rightcontent">
+          <h3 style="font-size: 24px;">{{ title }}</h3>
+          <div class="rating">
+            <img src="/images/demo/star.svg" alt="Star" /><img src="/images/demo/star.svg" alt="Star" /><img
+              src="/images/demo/star.svg" alt="Star" /><img src="/images/demo/star.svg" alt="Star" /><img
+              src="/images/demo/star.svg" alt="Star" />
+          </div>
+          <p class="review"></p>
+          <div class="price">₹1.00</div>
+          <p class="description">
+            Razorpay provides an end-to-end online payments solution. We accept
+            and validate Internet payments via Credit Card, Debit Card,
+            Net-Banking, UPI and popular Wallets from the end customers in
+            real-time.
+          </p>
+          <div class="pay">
+            <button class="btn btn-primary razorpay-payment-button" id="paybtn" type="button">
+              Pay with Razorpay
+            </button>
+            <div id="footnote">
+              <em>*This is a real transaction, and the money will be
+                auto-refunded to your account in 4-5 days.</em>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </div>
 </div>
+
