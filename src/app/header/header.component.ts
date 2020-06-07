@@ -17,14 +17,13 @@ export class HeaderComponent implements OnInit {
   private _window: ICustomeWindow;
   public rzp;
   public options: any = {
-    key: 'rzp_test_XU7Z8imHkxH25o', // add razorpay key here
+    key: , // add razorpay key here
     name: 'RazorPay Payment',
     description: 'Make Payment',
-    amount: 5000, // razorpay takes amount in paisa
-    // order_id: "order_EzPOcsMLDnuBa9",
+    amount: 5000,
     prefill: {
       name: 'sourabh',
-      email: 'rajwadesourabh@gmail.com', // add your email id
+      email: 'rajwadesourabh@gmail.com',
     },
     notes: {},
     theme: {
@@ -36,7 +35,7 @@ export class HeaderComponent implements OnInit {
         this.zone.run(() => {
           alert('Payment Failled....Retry after some time');
           this.router.navigate(['/head']);
-          // add current page routing if payment fails
+
         });
       })
     }
